@@ -1,0 +1,53 @@
+body {
+	background-color: #000;
+	font-family: "Lucida Console", "Lucida Sans Typewriter";
+}
+
+p {
+	color: #FFF; 
+	font-size: 12px;
+	top: 50%;
+	left: 40%;
+	tranform: translate(-40%, -50%);
+	position: fixed;
+}
+
+#car01 {
+	text-shadow: -1px 1px hsl(5.4, 100%, 50%), -3px 2px hsl(10.8, 100%, 50%), -5px 3px hsl(16.2, 100%, 50%), -7px 4px hsl(21.6, 100%, 50%), -9px 5px hsl(27, 100%, 50%), -11px 6px hsl(32.4, 100%, 50%), -13px 7px hsl(37.8, 100%, 50%), -14px 8px hsl(43.2, 100%, 50%), -16px 9px hsl(48.6, 100%, 50%); color: #FFF; font-size: 30px;
+	position: fixed;
+	top: 200px;
+	left: 40%;
+}
+
+#mouth {
+	font-size: 30px;
+	color: #FFF;
+	position: fixed;
+	top: 200px;
+	left: 45%;
+}
+
+#car02 {
+	font-size: 30px;
+	text-shadow: 1px 1px hsl(5.4, 100%, 50%), 3px 2px hsl(10.8, 100%, 50%), 5px 3px hsl(16.2, 100%, 50%), 7px 4px hsl(21.6, 100%, 50%), 9px 5px hsl(27, 100%, 50%), 11px 6px hsl(32.4, 100%, 50%), 13px 7px hsl(37.8, 100%, 50%), 14px 8px hsl(43.2, 100%, 50%), 16px 9px hsl(48.6, 100%, 50%); 
+	color: #FFF; 
+	position: fixed;
+	top: 200px;
+	left: 53%;
+}
+
+.animate {
+    -webkit-animation: float 1.5s linear infinite alternate;
+}
+
+
+@keyframes float {
+	0%, 100% {
+		-webkit-transform: translateX(0);
+		-webkit-transform: translateY(0);
+	}
+	50% {
+		-webkit-trasnform: translateX(10px);
+		-webkit-transform: translateY(10px);
+	}
+
