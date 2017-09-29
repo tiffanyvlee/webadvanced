@@ -28,6 +28,7 @@ var css4 = "text-shadow: -1px 1px hsl(5.4, 100%, 50%), -3px 2px hsl(10.8, 100%, 
 $(function () { 
 
 	$('.remove').click(function() {
+		yeah.play();
 		$(".remove").remove();
 
 
