@@ -83,7 +83,7 @@ body {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
-	background-color: #FFE599;
+	background-color: #FFAE0C;
 	position: absolute;
 	margin-top: 120%;
 	margin-left: 70%;
@@ -98,6 +98,57 @@ body {
 	position: absolute;
 	margin-top: 150%;
 	margin-left: 5%;
+}
+
+.circle07 {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-color: #FFAE0C;
+	position: absolute;
+	margin-top: 180%;
+	margin-left: 10%;
+}
+
+.circle08 {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color: #FFE599;
+	position: absolute;
+	margin-top: 180%;
+	margin-left: 75%;
+
+}
+
+.circle09 {
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	background-color: #FFE344;
+	position: absolute;
+	margin-top: 240%;
+	margin-left: 5%;
+}
+
+.circle10 {
+	border-radius: 50%;
+	width: 320px;
+	height: 320px;
+	background-color: #FF4D0C;
+	position: absolute;
+	margin-top: 290%;
+	margin-left: 75%;
+}		
+
+.circle11 {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-color: #FF4D0C;
+	position: absolute;
+	margin-top: 210%;
+	margin-left: 85%;
 }		
 
 .face {

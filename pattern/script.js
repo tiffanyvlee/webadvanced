@@ -11,6 +11,7 @@ var bass01 = new Audio('media/audio/bass01.wav'),
 	kick02= new Audio('media/audio/kick02.wav'),
 	kick03= new Audio('media/audio/kick03.wav'),
 	kick04= new Audio('media/audio/kick04.wav'),
+	doublekick = new Audio('media/audio/doublekick.wav'),
 	yeah= new Audio('media/audio/yeah.wav');
 
 
@@ -58,14 +59,12 @@ $(function () {
 			        var hue = "rgb(" + (Math.floor(Math.random() * 200)) + "," + (Math.floor(Math.random(100, 200) )) + "," + (Math.floor(Math.random(100, 200))) + ")";
 			        $('.face').css("background-color", hue)
 
-
-			        bass01.play();
 			        yeah.play();
 			        console.log('%c' + fire, css1);
 
 			    }, fireTimer00); 
 
-			    fireTimer00 += 500; 
+			    fireTimer00 += 6000; 
 
 			} 
 
@@ -295,6 +294,196 @@ $('.circle06').mousedown(function() {
 		    }, fireTimer06); 
 
 		    fireTimer06 += 2000;
+
+		} 
+	});
+
+
+
+	$('.circle07').mousedown(function() {
+
+		var fireTimer07 = 0;
+
+		for (var i = 0; i < 60; i++) {
+
+		    setTimeout(function() {
+
+		        var fire = " "; 
+
+		        for (var j = 0; j < 22; j++) {
+
+		            var fireOrspace = Math.random()*100; 
+
+		            if (fireOrspace < 50) {
+		                fire+= addShoot;
+		            }else if (fireOrspace > 100 && fireOrspace < 50){
+		                fire += " ";
+		            }else {
+		                fire += "    ";
+		            }
+
+		        }
+
+		         var hue = "rgb(" + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random(200, 256) )) + "," + (Math.floor(Math.random(100, 200))) + ")";
+			        $('.circle07').css("background-color", hue)
+
+		        bass01.play();
+		        console.log('%c' + fire, css2);
+
+		    }, fireTimer07); 
+
+		    fireTimer07 += 2000;
+
+		} 
+	});
+
+
+	$('.circle08').click(function() {
+
+		var fireTimer08 = 0;
+
+		for (var i = 0; i <100; i++) {
+
+		    setTimeout(function() {
+
+		        var fire = " ";
+
+		        for (var j = 0; j < 10; j++) { 
+
+		            var fireOrspace = Math.random()*100; 
+
+		            if (fireOrspace < 90) {
+		                fire+= addShoot;
+		            }else if (fireOrspace > 2 && fireOrspace < 1){
+		                fire += "";
+		            }else {
+		                fire += " ";
+		            }
+
+		        }
+
+		        var hue = "rgb(" + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random(200, 256) )) + "," + (Math.floor(Math.random(100, 200))) + ")";
+			        $('.circle08').css("background-color", hue)
+
+		        doublekick.play();
+		        console.log(fire);
+
+		    }, fireTimer08);
+
+		    fireTimer08 += 2000;
+
+		} 
+	});
+
+	$('.circle09').mousedown(function() {
+
+		var fireTimer09 = 0;
+
+		for (var i = 0; i < 60; i++) {
+
+		    setTimeout(function() {
+
+		        var fire = " "; 
+
+		        for (var j = 0; j < 120; j++) {
+
+		            var fireOrspace = Math.random()*100; 
+
+		            if (fireOrspace < 50) {
+		                fire+= addShoot;
+		            }else if (fireOrspace > 100 && fireOrspace < 50){
+		                fire += "";
+		            }else {
+		                fire += " ";
+		            }
+
+		        }
+
+		         var hue = "rgb(" + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random(200, 256) )) + "," + (Math.floor(Math.random(100, 200))) + ")";
+			        $('.circle09').css("background-color", hue)
+
+		        kick01.play();
+		        console.log('%c' + fire, css4);
+
+		    }, fireTimer09); 
+
+		    fireTimer09 += 4000;
+
+		} 
+	});
+
+
+$('.circle10').mousedown(function() {
+
+		var fireTimer10 = 0;
+
+		for (var i = 0; i < 60; i++) {
+
+		    setTimeout(function() {
+
+		        var fire = " "; 
+
+		        for (var j = 0; j < 52; j++) {
+
+		            var fireOrspace = Math.random()*100; 
+
+		            if (fireOrspace < 50) {
+		                fire+= shoot;
+		            }else if (fireOrspace > 100 && fireOrspace < 50){
+		                fire += "      ";
+		            }else {
+		                fire += "";
+		            }
+
+		        }
+
+		         var hue = "rgb(" + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random(200, 256) )) + "," + (Math.floor(Math.random(100, 200))) + ")";
+			        $('.circle10').css("background-color", hue)
+
+		        kick03.play();
+		        console.log('%c' + fire, css4);
+
+		    }, fireTimer10); 
+
+		    fireTimer10 += 1000;
+
+		} 
+	});
+
+
+$('.circle11').mousedown(function() {
+
+		var fireTimer11 = 0;
+
+		for (var i = 0; i < 60; i++) {
+
+		    setTimeout(function() {
+
+		        var fire = " "; 
+
+		        for (var j = 0; j < 22; j++) {
+
+		            var fireOrspace = Math.random()*100; 
+
+		            if (fireOrspace < 50) {
+		                fire+= addShoot;
+		            }else if (fireOrspace > 100 && fireOrspace < 50){
+		                fire += "...";
+		            }else {
+		                fire += " . ";
+		            }
+
+		        }
+
+		         var hue = "rgb(" + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random(200, 256) )) + "," + (Math.floor(Math.random(100, 200))) + ")";
+			        $('.circle11').css("background-color", hue)
+
+		        kick04.play();
+		        console.log('%c' + fire, css2);
+
+		    }, fireTimer11); 
+
+		    fireTimer11 += 2000;
 
 		} 
 	});
