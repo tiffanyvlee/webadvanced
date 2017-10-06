@@ -1,8 +1,11 @@
-var space = '',
-	shoot = '.',
-	addShoot = '🔥',
-	fire = '',
-	addFire = '.🔥.';
+var x = 'xx',
+	space = '   ',
+	shoot = '.............',
+	addShoot = '🔥🔥🔥🔥🔥🔥',
+	flame = '🔥',
+	addFire = '.🔥.',
+	fire = '';
+
 
 var bass01 = new Audio('media/audio/bass01.wav'),
 	bass02 = new Audio('media/audio/bass02.wav'),
@@ -19,55 +22,51 @@ var css1 = "text-shadow:  1px 1px hsl(5.4, 100%, 50%), 3px 2px hsl(10.8, 100%, 5
 
 var css2 = "text-shadow: -1px 1px hsl(5.4, 100%, 50%), -3px 2px hsl(10.8, 100%, 50%), -5px 3px hsl(16.2, 100%, 50%), -7px 4px hsl(21.6, 100%, 50%), -9px 5px hsl(27, 100%, 50%), -11px 6px hsl(32.4, 100%, 50%), -13px 7px hsl(37.8, 100%, 50%), -14px 8px hsl(43.2, 100%, 50%), -16px 9px hsl(48.6, 100%, 50%); color: #FFF; font-size: 10px;";
 
-var css3 = "text-shadow:  1px 1px hsl(5.4, 100%, 50%), 3px 2px hsl(10.8, 100%, 50%), 5px 3px hsl(16.2, 100%, 50%), 7px 4px hsl(21.6, 100%, 50%), 9px 5px hsl(27, 100%, 50%), 11px 6px hsl(32.4, 100%, 50%), 13px 7px hsl(37.8, 100%, 50%), 14px 8px hsl(43.2, 100%, 50%), 16px 9px hsl(48.6, 100%, 50%); color: #FFF; font-size: 12px;";
+var css3 = "text-shadow:  1px 1px hsl(5.4, 100%, 50%), 3px 2px hsl(10.8, 100%, 50%), 5px 3px hsl(16.2, 100%, 50%), 7px 4px hsl(21.6, 100%, 50%), 9px 5px hsl(27, 100%, 50%), 11px 6px hsl(32.4, 100%, 50%), 13px 7px hsl(37.8, 100%, 50%), 14px 8px hsl(43.2, 100%, 50%), 16px 9px hsl(48.6, 100%, 50%); color: #FFF; font-size: 14px;";
 
 var css4 = "text-shadow: -1px 1px hsl(5.4, 100%, 50%), -3px 2px hsl(10.8, 100%, 50%), -5px 3px hsl(16.2, 100%, 50%), -7px 4px hsl(21.6, 100%, 50%), -9px 5px hsl(27, 100%, 50%), -11px 6px hsl(32.4, 100%, 50%), -13px 7px hsl(37.8, 100%, 50%), -14px 8px hsl(43.2, 100%, 50%), -16px 9px hsl(48.6, 100%, 50%); color: #FFF; font-size: 2px;";
-
 
 
 $(function () { 
 
 	$('.remove').click(function() {
-		yeah.play();
 		$(".remove").remove();
-
 
 	});
 
 	$('.face').mousedown(function() {
-		var fireTimer00 = 0;
 
-			for (var i = 0; i < 60; i++) {
+		// var col = $('.face').css('background-color');
+
+		// if ( col != '#000')  {
+
+			//var color = $('.face');
+
+			// if ( color.css('background-color') == '#000') {
+				// console.log("true");
+
+			var fireTimer00 = 0;
+
+			for (var i = 0; i < 3; i++) {
 
 			    setTimeout(function() { 
 
-			        var fire = "";
-
-			        for (var j = 0; j < 3; j++) { 
-
-			            var fireOrspace = Math.random()*100; 
-
-			            if (fireOrspace < 90) {
-			                fire+= addFire; 
-			            }else if (fireOrspace > 2 && fireOrspace < 2){
-			                fire += ""; 
-			            }else {
-			                fire += ""; 
-			            }
-
-			        }
+		                fire = addShoot; 
 			       
 			        var hue = "rgb(" + (Math.floor(Math.random() * 200)) + "," + (Math.floor(Math.random(100, 200) )) + "," + (Math.floor(Math.random(100, 200))) + ")";
-			        $('.face').css("background-color", hue)
+			        $('.face').css("background-color", hue);
 
 			        yeah.play();
-			        console.log('%c' + fire, css1);
+			        console.log('%c' + fire, css1); 	
 
 			    }, fireTimer00); 
 
-			    fireTimer00 += 6000; 
+			    fireTimer00 += 6000;
 
 			} 
+		
+		// else { console.log("false");}
+		
 
 	});
 
@@ -80,27 +79,13 @@ $(function () {
 
 		    setTimeout(function() {
 
-		        var fire = " "; 
-
-		        for (var j = 0; j < 22; j++) {
-
-		            var fireOrspace = Math.random()*100; 
-
-		            if (fireOrspace < 50) {
-		                fire+= addShoot;
-		            }else if (fireOrspace > 100 && fireOrspace < 50){
-		                fire += "   ";
-		            }else {
-		                fire += "    ";
-		            }
-
-		        }
+		        fire += x + space;
 
 		         var hue = "rgb(" + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random(200, 256) )) + "," + (Math.floor(Math.random(100, 200))) + ")";
-			        $('.circle01').css("background-color", hue)
+			        $('.circle01').css("background-color", hue);
 
 		        kick02.play();
-		        console.log('%c' + fire, css2);
+		        console.log('%c' + fire, css4);
 
 		    }, fireTimer01); 
 
@@ -119,19 +104,13 @@ $(function () {
 
 		    setTimeout(function() {
 
-		        var fire = " "; 
+		        var fire = ""; 
 
-		        for (var j = 0; j < 22; j++) {
+		        for (var j = 0; j < 2; j++) {
 
 		            var fireOrspace = Math.random()*100; 
 
-		            if (fireOrspace < 50) {
-		                fire+= addShoot;
-		            }else if (fireOrspace > 100 && fireOrspace < 50){
-		                fire += " ";
-		            }else {
-		                fire += "    ";
-		            }
+		            fire += shoot + shoot;
 
 		        }
 
@@ -157,19 +136,11 @@ $(function () {
 
 		    setTimeout(function() {
 
-		        var fire = " ";
+		        var fire = "";
 
 		        for (var j = 0; j < 10; j++) { 
 
-		            var fireOrspace = Math.random()*100; 
-
-		            if (fireOrspace < 90) {
-		                fire+= addShoot;
-		            }else if (fireOrspace > 2 && fireOrspace < 1){
-		                fire += "";
-		            }else {
-		                fire += " ";
-		            }
+		        	fire = x + flame + x;
 
 		        }
 
@@ -177,11 +148,11 @@ $(function () {
 			        $('.circle03').css("background-color", hue)
 
 		        bowbeep.play();
-		        console.log(fire);
+		        console.log('%c' + fire, css3);
 
 		    }, fireTimer03);
 
-		    fireTimer03 += 1000;
+		    fireTimer03 += 1500;
 
 		} 
 	});
@@ -194,19 +165,11 @@ $(function () {
 
 		    setTimeout(function() {
 
-		        var fire = " "; 
+		        var fire = ""; 
 
-		        for (var j = 0; j < 120; j++) {
+		        for (var j = 0; j < 20; j++) {
 
-		            var fireOrspace = Math.random()*100; 
-
-		            if (fireOrspace < 50) {
-		                fire+= addShoot;
-		            }else if (fireOrspace > 100 && fireOrspace < 50){
-		                fire += "";
-		            }else {
-		                fire += " ";
-		            }
+		        	fire = shoot + space + shoot + space + shoot;
 
 		        }
 
@@ -214,7 +177,7 @@ $(function () {
 			        $('.circle04').css("background-color", hue)
 
 		        kick01.play();
-		        console.log('%c' + fire, css4);
+		        console.log('%c' + fire, css3);
 
 		    }, fireTimer04); 
 
@@ -234,17 +197,9 @@ $('.circle05').mousedown(function() {
 
 		        var fire = " "; 
 
-		        for (var j = 0; j < 52; j++) {
+		        for (var j = 0; j < 22; j++) {
 
-		            var fireOrspace = Math.random()*100; 
-
-		            if (fireOrspace < 50) {
-		                fire+= shoot;
-		            }else if (fireOrspace > 100 && fireOrspace < 50){
-		                fire += "      ";
-		            }else {
-		                fire += "";
-		            }
+		         	fire = addShoot + addShoot + addShoot + addShoot;
 
 		        }
 
@@ -274,15 +229,7 @@ $('.circle06').mousedown(function() {
 
 		        for (var j = 0; j < 22; j++) {
 
-		            var fireOrspace = Math.random()*100; 
-
-		            if (fireOrspace < 50) {
-		                fire+= addShoot;
-		            }else if (fireOrspace > 100 && fireOrspace < 50){
-		                fire += "...";
-		            }else {
-		                fire += " . ";
-		            }
+		        	fire = addFire + shoot + shoot + addFire;
 
 		        }
 
@@ -313,15 +260,7 @@ $('.circle06').mousedown(function() {
 
 		        for (var j = 0; j < 22; j++) {
 
-		            var fireOrspace = Math.random()*100; 
-
-		            if (fireOrspace < 50) {
-		                fire+= addShoot;
-		            }else if (fireOrspace > 100 && fireOrspace < 50){
-		                fire += " ";
-		            }else {
-		                fire += "    ";
-		            }
+		        	fire = flame + space + flame + space + flame + space + flame;
 
 		        }
 
@@ -351,15 +290,7 @@ $('.circle06').mousedown(function() {
 
 		        for (var j = 0; j < 10; j++) { 
 
-		            var fireOrspace = Math.random()*100; 
-
-		            if (fireOrspace < 90) {
-		                fire+= addShoot;
-		            }else if (fireOrspace > 2 && fireOrspace < 1){
-		                fire += "";
-		            }else {
-		                fire += " ";
-		            }
+		        	fire = addShoot + addShoot + addShoot + addShoot + addShoot;
 
 		        }
 
@@ -388,15 +319,7 @@ $('.circle06').mousedown(function() {
 
 		        for (var j = 0; j < 120; j++) {
 
-		            var fireOrspace = Math.random()*100; 
-
-		            if (fireOrspace < 50) {
-		                fire+= addShoot;
-		            }else if (fireOrspace > 100 && fireOrspace < 50){
-		                fire += "";
-		            }else {
-		                fire += " ";
-		            }
+		        	fire = shoot + x + shoot 
 
 		        }
 
@@ -464,15 +387,7 @@ $('.circle11').mousedown(function() {
 
 		        for (var j = 0; j < 22; j++) {
 
-		            var fireOrspace = Math.random()*100; 
-
-		            if (fireOrspace < 50) {
-		                fire+= addShoot;
-		            }else if (fireOrspace > 100 && fireOrspace < 50){
-		                fire += "...";
-		            }else {
-		                fire += " . ";
-		            }
+		        	fire = x + addShoot + x;
 
 		        }
 
