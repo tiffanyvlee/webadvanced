@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>loop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+
+    <body>
+       
+        <div id="canvas"></div>
+        <div class="circle-container"></div>
+        <div id="hill01"></div>
+        <div id="hill02"></div>
+        <div id="hill03"></div>
+        <!-- <div id="ground"></div> -->
+
+        <div id="liveclock" class="outer_face">
+
+            <div class="marker oneseven"></div>
+            <div class="marker twoeight"></div>
+            <div class="marker fourten"></div>
+            <div class="marker fiveeleven"></div>
+
+            <div class="inner_face">
+                <div class="hand hour"></div>
+                <div class="hand minute"></div>
+                <div class="hand second"></div>
+            </div>
+
+        </div>
+
+        <!-- </div> -->
+
+
+        <div class="body">
+            <img id="body_00" src="media/svg/body/body_00.svg"/>
+            <img id="body_01" src="media/svg/body/body_13.svg"/>
+            <img id="body_02" src="media/svg/body/body_12.svg"/>
+            <img id="body_03" src="media/svg/body/body_11.svg"/>
+            <img id="body_04" src="media/svg/body/body_10.svg"/>
+            <img id="body_05" src="media/svg/body/body_09.svg"/>
+            <img id="body_06" src="media/svg/body/body_08.svg"/>
+            <img id="body_07" src="media/svg/body/body_07.svg"/>
+            <img id="body_08" src="media/svg/body/body_06.svg"/>
+            <img id="body_09" src="media/svg/body/body_05.svg"/>
+            <img id="body_10" src="media/svg/body/body_04.svg"/>
+            <img id="body_11" src="media/svg/body/body_03.svg"/>
+            <img id="body_12" src="media/svg/body/body_02.svg"/>
+            <img id="body_13" src="media/svg/body/body_01.svg"/>
+            <img id="body_14" src="media/svg/body/body_00.svg"/>
+           <!--  <div id="bodyimg"><img id="body_6" src="media/svg/body/body_00.svg"/></div>
+            <div id="bodyimg"><img id="body_12" src="media/svg/body/body_13.svg"/></div>
+            <div id="bodyimg"><img id="body_18" src="media/svg/body/body_12.svg"/></div>
+            <div id="bodyimg"><img id="body_24" src="media/svg/body/body_11.svg"/></div>
+            <div id="bodyimg"><img id="body_30" src="media/svg/body/body_10.svg"/></div>
+            <div id="bodyimg"><img id="body_36" src="media/svg/body/body_09.svg"/></div>
+            <div id="bodyimg"><img id="body_42" src="media/svg/body/body_08.svg"/></div>
+            <div id="bodyimg"><img id="body_48" src="media/svg/body/body_07.svg"/></div>
+            <div id="bodyimg"><img id="body_54" src="media/svg/body/body_06.svg"/></div>
+            <img id="body_60" src="media/svg/body/body_05.svg"/>
+            <img id="body_66" src="media/svg/body/body_04.svg"/>
+            <img id="body_72" src="media/svg/body/body_03.svg"/>
+            <img id="body_78" src="media/svg/body/body_02.svg"/>
+            <img id="body_84" src="media/svg/body/body_01.svg"/>
+            <img id="body_90" src="media/svg/body/body_00.svg"/> -->
+        </div>
+
+        <div class='hover'>
+            <div id="sect00"></div>
+            <div id="sect01"></div>
+            <div id="sect02"></div>
+            <div id="sect03"></div>
+            <div id="sect04"></div>
+            <div id="sect05"></div>
+            <div id="sect06"></div>
+            <div id="sect07"></div>
+            <div id="sect08"></div>
+            <div id="sect09"></div>
+            <div id="sect10"></div>
+            <div id="sect11"></div>
+            <div id="sect12"></div>
+            <div id="sect13"></div>
+            <div id="sect14"></div>
+        </div>
+
+       <!--  <div id="pill"><img src="media/svg/body/pill.svg"></div> -->
+
+         <div class="fingers">
+            <div id="thumb"><img src="media/svg/hand/hand_thumb.svg"></div>
+            <div id="index"><img src="media/svg/hand/hand_index.svg"></div>
+            <div id="middle"><img src="media/svg/hand/hand_middle.svg"></div>
+            <div id="ring"><img src="media/svg/hand/hand_ring.svg"></div>
+            <div id="pinky"><img src="media/svg/hand/hand_pinky.svg"></div>
+        </div>
+
+
+        <div id="test"></div>
+
+        <div id="testScroll"></div>
+
+        <!-- scripts -->
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+       <!--  <script src="js/main.js"></script> -->
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="build/js/vendor/jquery.min.js"><\/script>')</script>
+        
+        <!-- PUT YOUR JS LIBRARY SCRIPT HERE: -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+
+        <!-- your custom JS -->
+        <script src="js/script.js"></script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+    </body>
+</html>
