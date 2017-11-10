@@ -87,17 +87,7 @@
 // });
 
 
-	$(document).ready(function() {
-
-		//updateResult();
-
-
-
-
-		// document.getElementById("test").appendChild(elem);
-		// elem.src = "../media/svg/donut.svg";
-
-//cookie
+$('.fingers').click(function() {
 		var allCircles =  [],
     	circle = '<div class="circle" />';
 
@@ -123,6 +113,22 @@
 
 		}
 
+	
+}
+
+
+	$(document).ready(function() {
+
+		//updateResult();
+
+
+
+
+		// document.getElementById("test").appendChild(elem);
+		// elem.src = "../media/svg/donut.svg";
+
+//cookie
+	
 
 
 

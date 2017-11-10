@@ -55,41 +55,7 @@ animation: hover 1s linear infinite alternate;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     }
-/*
-.outer_face .marker {
-    background: #fff;
-    width: 1px;
-    margin-left: -4px;
-    }*/
-
-/*.outer_face .marker.oneseven {
-    -moz-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-    }
-
-.outer_face .marker.twoeight {
-    -moz-transform: rotate(60deg);
-    -ms-transform: rotate(60deg);
-    -webkit-transform: rotate(60deg);
-    transform: rotate(60deg);
-    }
-
-.outer_face .marker.fourten {
-    -moz-transform: rotate(120deg);
-    -ms-transform: rotate(120deg);
-    -webkit-transform: rotate(120deg);
-    transform: rotate(120deg);
-    }
-
-.outer_face .marker.fiveeleven {
-    -moz-transform: rotate(150deg);
-    -ms-transform: rotate(150deg);
-    -webkit-transform: rotate(150deg);
-    transform: rotate(150deg);
-    }
-*/
+    
 .inner_face {
     position: relative;
     width: 88%;
@@ -102,19 +68,6 @@ animation: hover 1s linear infinite alternate;
     left: 6%;
     top: 6%;
     }
-
-/*.inner_face::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    border-radius: 18px;
-    margin-left: -9px;
-    margin-top: -9px;
-    background: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    }*/
 
 .hand, .hand.hour {
     position: absolute;
@@ -149,8 +102,6 @@ animation: hover 1s linear infinite alternate;
     top: 0;
     background: #fff;
     }
-
-
 
 
 
