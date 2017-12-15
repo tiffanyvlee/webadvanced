@@ -1,3 +1,48 @@
+// var mic;
+
+// function setup() {
+//   createCanvas(710, 200);
+//   mic = new p5.AudioIn();
+
+//   mic.start();
+// }
+
+// function draw() {
+//   background(200);
+
+//   var vol = mic.getLevel();
+//   fill(127);
+//   stroke(0);
+
+//   var h = map(vol, 0, 1, height, 0);
+//   ellipse(width/2, h - 25, 50, 50);
+// }
+
+
+
+// })
+
+// $('#box').click(function () {
+
+// 	var timer = 0;
+// 	var add = 1;
+
+// 	for (var i = 0; i < 10; i ++) {
+// 		set Timeout (function() {
+// 			var hide = document.getElementById('hide');
+// 			hide.style.scale = add;
+// 		}, timer);
+
+// 		timer += 500;
+// 		add += 1;
+// 	}
+// }); 
+
+
+var audio = new Audio ('build/media/sounds/soundtest.mp3');
+audio.play();
+
+
 
 
 //face detection
@@ -23,7 +68,6 @@
                 context.strokeStyle = '#fff';
                 context.strokeRect((-rect.x) + 100 + (canvas.width/2), rect.y, rect.width, rect.height);
 
-
                 console.log(rect.x)
 
                 hide.style.position = 'absolute';
@@ -42,25 +86,6 @@
 
 
 
-var mic;
-
-function setup() {
-  createCanvas(710, 200);
-  mic = new p5.AudioIn();
-
-  mic.start();
-}
-
-function draw() {
-  background(200);
-
-  var vol = mic.getLevel();
-  fill(127);
-  stroke(0);
-
-  var h = map(vol, 0, 1, height, 0);
-  ellipse(width/2, h - 25, 50, 50);
-}
 
 
 
@@ -216,17 +241,6 @@ function draw() {
 		});
 
 	//});
-
-
-
-
-
-
-
-
-
-
-
 
 
 
