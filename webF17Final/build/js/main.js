@@ -72,7 +72,7 @@ audio.play();
 
                 hide.style.position = 'absolute';
 
-                hide.style.left = ((-1 * rect.x) + (canvas.width/2) + 400 + "px");
+                hide.style.left = ((-1 * rect.x) + (canvas.width/2) + 500 + "px");
                 hide.style.top = (rect.y + 300) + "px";
 
             });
