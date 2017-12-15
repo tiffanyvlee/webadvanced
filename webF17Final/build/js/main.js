@@ -1,39 +1,3 @@
-// $(document).ready(function(){
-
-
-// var allCircles =  [],
-//     circle     =  '<div class="circle" />';
-
-
-// if(Cookies.getJSON('circles')){ 
-
-//     var existingCircles = Cookies.getJSON('circles');
-
-//     for (var i = 0; i < existingCircles.length; i++) { 
-    
-//         $(".circle-container").append(existingCircles[i]); 
-    
-//     }
-
-//     existingCircles.push(circle);
-
-//     Cookies.set('circles', existingCircles, { expires: 10});
-        
-
-
-// }else{ 
-
-//     allCircles.push(circle);
-
-//     Cookies.set('circles', allCircles, {expires: 10});
-
-// }
-
-
-
-
-
-// })
 
 
 //face detection
@@ -78,29 +42,14 @@
 
 
 var mic;
-
-function setup() {
-  createCanvas(710, 200);
-
-  // Create an Audio input
-  mic = new p5.AudioIn();
-
-  // start the Audio Input.
-  // By default, it does not .connect() (to the computer speakers)
+function setup(){
+  mic = new p5.AudioIn()
   mic.start();
 }
-
-function draw() {
-  background(200);
-
-  // Get the overall volume (between 0 and 1.0)
-  var vol = mic.getLevel();
-  fill(127);
-  stroke(0);
-
-  // Draw an ellipse with height based on volume
-  var h = map(vol, 0, 1, height, 0);
-  ellipse(width/2, h - 25, 50, 50);
+function draw(){
+  background(0);
+  micLevel = mic.getLevel();
+  ellipse(width/2, constrain(height-micLevel*height*5, 0, height), 10, 10);
 }
 
 
