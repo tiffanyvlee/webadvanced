@@ -40,43 +40,28 @@
         gui.add(tracker, 'stepSize', 10, 10).step(1);
     }
 
-var sound;
 
-function setup(){
-  var cnv = createCanvas(windowWidth, windowHeight);
-  sound = new p5.AudioIn();
-  sound.start();
-  fft = new p5.FFT();
-  fft.setInput(sound);
 
-  sound.amp(0.2);
+var mic;
+
+function setup() {
+  createCanvas(710, 200);
+  mic = new p5.AudioIn();
+
+  mic.start();
 }
 
-function draw(){
-  background(0);
-  var vol = sound.getLevel();
-  var spectrum = fft.analyze();
+function draw() {
+  background(200);
 
-  noStroke();
-  fill(0,255,0); // spectrum is green
-  for (var i = 0; i< spectrum.length; i++){
-    var x = map(i, 0, spectrum.length, 0, width);
-    var h = -height + map(spectrum[i], 0, 255, height, 0);
-    rect(x, height, width / spectrum.length, h );
-  }
+  var vol = mic.getLevel();
+  fill(127);
+  stroke(0);
 
-  var waveform = fft.waveform();
-  noFill();
-  beginShape();
-  stroke(255,0,0); // waveform is red
-  strokeWeight(1);
-  for (var i = 0; i< waveform.length; i++){
-    var x = map(i, 0, waveform.length, 0, width);
-    var y = map( waveform[i], -1, 1, 0, height);
-    vertex(x,y);
-  }
-  endShape();
+  var h = map(vol, 0, 1, height, 0);
+  ellipse(width/2, h - 25, 50, 50);
 }
+
 
 
 //$("body").mousemove(function() {
