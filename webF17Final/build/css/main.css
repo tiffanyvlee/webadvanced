@@ -1,0 +1,453 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFF;
+	justify-content: center;
+	align-items: center;
+	background: #FFF;
+	color: #0061ff;
+}
+
+video, canvas {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	z-index: 1;
+}
+
+
+img {
+	width: 400%;
+	position: absolute;
+	transform: translate(-46%, -45%);
+}
+
+p {
+	position: fixed;
+	font-size: 12px;
+	color: #FFF;
+	animation: opacity 5s linear infinite alternate;
+}
+
+.white {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #FFF;
+	z-index: 10;
+}
+
+#recorder {
+	z-index: 100;
+}
+
+#hide {
+	opacity: 0;
+	z-index: 1000;
+}
+
+#fBase {
+	opacity: 0;
+	width: 10%;
+	height: 10%;
+}
+
+.rectFO {
+	animation: hoverA 3.5s linear infinite alternate;
+}
+
+.rectFE {
+	animation: hoverA 3s linear infinite alternate;
+}
+
+.rectFN {
+	animation: hoverE 1.8s linear infinite alternate;
+}
+
+#fBase00 {
+	position: absolute;
+	animation: hoverA 3s linear infinite alternate;
+}
+
+#fBase01 {
+	position: absolute;
+	animation: hoverB 2.5s linear infinite alternate;
+}
+
+#fBase02 {
+	position: absolute;
+	animation: hoverC 4s linear infinite alternate;
+}
+
+#fBase03 {
+	position: absolute;
+	animation: hoverD 2s linear infinite alternate;
+}
+
+#hide {
+	width: 10%;
+	height: 10%;
+	/*background-color: #999;*/
+	/*opacity: 0.3;*/
+	position: absolute;	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+div {
+	width: 100px;
+	height: 70%;
+}
+
+#rectFO1 {
+	transform: scaleX(0.45) scaleY(4);
+	background-color: #000;
+	position: absolute;
+}
+
+#rectFO2 {
+	transform: scaleX(0.5) scaleY(0.8);
+	position: absolute;
+	background-color: #000;
+
+}
+
+#rectFO3 {
+	transform: scaleX(0.55) scaleY(5);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFO4 {
+	transform: scaleX(0.7) scaleY(7);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFO5 {
+	transform: scaleX(0.23) scaleY(3);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFO6 {
+	transform: scaleX(0.63) scaleY(6);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFO7 {
+	transform: scaleX(1.2) scaleY(3);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFO8 {
+	transform: scaleX(0.3) scaleY(1);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFO9 {
+	transform: scaleX(0.25) scaleY(0.5);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectF10 {
+	transform: scaleX(0.28) scaleY(0.3);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectF11 {
+	transform: scaleX(0.62) scaleY(1.2);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectF12 {
+	transform: scaleX(0.05) scaleY(3);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectF13 {
+	transform: scaleX(0.5) scaleY(1);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFEL01 {
+	transform: scaleX(0.42) scaleY(.5);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFEL02 {
+	transform: scaleX(0.8) scaleY(1);
+	position: absolute;
+	background-color: #000;
+}
+#rectFEL03 {
+	transform: scaleX(1) scaleY(10);
+	position: absolute;
+	background-color: #000;
+	animation: rotB 3s linear infinite alternate;
+}
+#rectFEL04 {
+	transform: scaleX(0.37) scaleY(4);
+	position: absolute;
+	background-color: #000;
+}
+#rectFEL05 {
+	transform: scaleX(0.26) scaleY(0.7);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFEL06 {
+	transform: scaleX(0.4) scaleY(0.8);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFEL07 {
+	transform: scaleX(0.61) scaleY(1);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFEL08 {
+transform: scaleX(0.5) scaleY(.2);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFER01 {
+transform: scaleX(0.95) scaleY(1);
+	position: absolute;
+	background-color: #000;
+	animation: rotA 2s linear infinite alternate;
+}
+
+#rectFER02 {
+	transform: scaleX(0.82) scaleY(0.14);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFER03 {
+	transform: scaleX(0.58) scaleY(0.9);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFER04 {
+	transform: scaleX(0.43) scaleY(0.2);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFER05 {
+	transform: scaleX(0.27) scaleY(0.5);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFER06 {
+	transform: scaleX(0.65) scaleY(0.6);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFER07 {
+transform: scaleX(0.47) scaleY(0.3);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN01 {
+transform: scaleX(0.16) scaleY(0.5);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN02 {
+	transform: scaleX(0.2) scaleY(1);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN03 {
+	transform: scaleX(0.3) scaleY(0.55);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN04 {
+	transform: scaleX(0.2) scaleY(0.2);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN05 {
+	transform: scaleX(0.13) scaleY(0.1);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN06 {
+	transform: scaleX(0.08) scaleY(0.15);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN07 {
+	transform: scaleX(0.04) scaleY(0.5);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN08 {
+	transform: scaleX(0.06) scaleY(0.8);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN09 {
+transform: scaleX(0.5) scaleY(0.3);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN10 {
+	transform: scaleX(0.28) scaleY(0.63);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN11 {
+	transform: scaleX(0.02) scaleY(0.7);
+	position: absolute;
+	background-color: #000;
+}
+
+#rectFN12 {
+	transform: scaleX(0.16) scaleY(0.1);
+	position: absolute;
+	background-color: #000;
+}
+
+#opacity {
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	background-color: #000;
+	animation: opacity 4s linear infinite alternate;
+}
+
+#block {
+	width:20px;
+	height: 40px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	background-color: #000;
+	animation: hoverA 1s linear infinite alternate;
+	z-index: 10000;
+}
+
+
+@keyframes hoverA {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(12px);
+	}
+}
+
+@keyframes hoverB {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-12px);
+	}
+}
+
+@keyframes hoverC {
+	from {
+		transform: translateX(0px);
+	}
+	to {
+		transform: translateX(12px);
+	}
+}
+
+@keyframes hoverD {
+	from {
+		transform: translateX(0px);
+	}
+	to {
+		transform: translateX(-12px);
+	}
+}
+
+@keyframes hoverE {
+	from {
+		transform: translateY(-40px);
+	}
+	to {
+		transform: translateY(-46px);
+	}
+}
+
+@keyframes hoverF {
+	from {
+		transform: translateY(0px) rotate(0deg);
+	}
+	to {
+		transform: translateY(-8px) rotate(10deg);
+	}
+}
+
+@keyframes rotA {
+	from {
+		transform: rotate(-20deg);
+	}
+	to {
+		transform: rotate(-30deg);
+	}
+}
+
+@keyframes rotB {
+	from {
+		transform: rotate(20deg);
+	}
+	to {
+		transform: rotate(30deg);
+	}
+}
+
+@keyframes opacity {
+	from {
+		opacity: 1;
+	} to {
+		opacity: 0;
+	}
+}
+

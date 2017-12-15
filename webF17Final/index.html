@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>mirror</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="build/css/normalize.css">
+		<link rel="stylesheet" href="build/css/main.css">
+
+		<script src="build/js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <script src="tracking.js-master/build/tracking-min.js"></script>
+        <script src="tracking.js-master/build/data/face-min.js"></script>
+        <script src="tracking.js-master/node_modules/dat.gui/build/dat.gui.min.js"></script>
+        <script src="tracking.js-master/assets/stats.min.js"></script>
+
+	</head>
+
+	<body>
+        <!-- face detection video/canvas-->
+        <div class="demo-frame">
+            <div class="demo-container">
+                <video id="video" width="640" height="480" preload autoplay loop muted></video>
+                <canvas id="canvas" width="640" height="480"></canvas>
+            </div>
+        </div>
+
+        <div class="white"></div>
+
+        <div id="recorder"></div>
+
+        <!-- face -->
+        <div id="hide">
+
+            <div id="fBase">
+                <div id="fBase00"><img src="build/media/images/fBase00.svg"></div>
+                <div id="fBase01"><img src="build/media/images/fBase01.svg"></div>
+                <div id="fBase02"><img src="build/media/images/fBase02.svg"></div>
+                <div id="fBase03"><img src="build/media/images/fBase03.svg"></div>
+            </div>
+
+            <div class="rescale">
+                <div class="rectFace">
+                    <div class="rectFO">
+                        <div id="rectFO1"></div>
+                        <div id="rectFO2"></div>
+                        <div id="rectFO3"></div>
+                        <div id="rectFO4"></div>
+                        <div id="rectFO5"></div>
+                        <div id="rectFO6"></div>
+                        <div id="rectFO7"></div>
+                        <div id="rectFO8"></div>
+                        <div id="rectFO9"></div>
+                        <div id="rectF10"></div>
+                        <div id="rectF11"></div>
+                        <div id="rectF12"></div>
+                        <div id="rectF13"></div>
+                    </div>
+                    <div class="rectFE">
+                        <div class="rectFEL">
+                            <div id="rectFEL01"></div>
+                            <div id="rectFEL02"></div>
+                            <div id="rectFEL03"></div>
+                            <div id="rectFEL04"></div>
+                            <div id="rectFEL05"></div>
+                            <div id="rectFEL06"></div>
+                            <div id="rectFEL07"></div>
+                            <div id="rectFEL08"></div>
+                        </div>
+                        <div class="rectFER">
+                            <div id="rectFER01"></div>
+                            <div id="rectFER02"></div>
+                            <div id="rectFER03"></div>
+                            <div id="rectFER04"></div>
+                            <div id="rectFER05"></div>
+                            <div id="rectFER06"></div>
+                            <div id="rectFER07"></div>
+                        </div>
+                    </div>
+                    <div class="rectFN">
+                        <div id="rectFN01"></div>
+                        <div id="rectFN02"></div>
+                        <div id="rectFN03"></div>
+                        <div id="rectFN04"></div>
+                  <!--  <div id="rectFN05"></div>
+                        <div id="rectFN06"></div> -->
+                        <div id="rectFN07"></div>
+                        <div id="rectFN08"></div>
+                        <div id="rectFN09"></div>
+                        <div id="rectFN10"></div>
+                        <div id="rectFN11"></div>
+                        <div id="rectFN12"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div id="opacity"></div>
+
+        <div id="block"></div>
+
+        <p>asdf</p>
+
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="build/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="build/js/plugins.js"></script>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+        <script language="javascript" type="text/javascript" src="p5.js-sound-master/lib/p5.js"></script>
+        <script language="javascript" type="text/javascript" src="p5.js-sound-master/lib/addons/p5.dom.js"></script> 
+        <script language="javascript" type="text/javascript" src="p5.js-sound-master/lib/p5.sound.min.js"></script> 
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+
+        <script src="build/js/main.js"></script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+	</body>
+
+</html>
