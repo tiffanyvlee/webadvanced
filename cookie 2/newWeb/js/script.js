@@ -114,7 +114,7 @@ $('.fingers').click(function() {
 		}
 
 	
-}
+});
 
 
 	$(document).ready(function() {
